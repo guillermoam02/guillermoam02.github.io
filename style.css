@@ -6,11 +6,11 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #333;
-  background: #efeee7;
+  background: #fdfbe8;
 }
 
 header {
-  background: #333;
+  background: rgb(0, 1, 56);
 }
 
 h1 {
@@ -18,32 +18,54 @@ h1 {
   margin: 0;
   margin-bottom: 20px;
   font-size: 28px;
-  color: rgb(255, 255, 255);
+  color: rgb(253, 255, 152);
   text-align: center;
-  background: rgb(48, 46, 46);
-
+  font-style: oblique;
+  text-transform: capitalize;
 }
 
 h2 {
   font-size: 24px;
+  text-transform: capitalize;
+  text-decoration: underline;  
+  color: rgb(153, 0, 0);
+}
+
+h4 {
+  font-size: 12px;
+  text-transform: inherit;
+  font-style: italic;
+}
+
+p {
+  text-align: justify;
+  margin-right: 15px;
 }
 
 a {
-  color: #d21034;
+  color: #004472;
 }
 
-/* Selecting elements by class */
-.container {
-  width: 1024px;
-  margin: 0 auto;
+th, td {
+  border-bottom: 1px solid #ddd;
 }
 
-/* Selecting elements by ID */
-#main-bio,
-#contact-info,
-#bio-image {
-  float: left;
+th {
+  padding: 5px 0;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: rgb(0, 6, 51);
 }
+
+td {
+  padding: 5px;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* ID - there could only be one per html, 
+  higher hierarchy than class */
 
 #figure {
   position: relative;
@@ -51,12 +73,20 @@ a {
 
 #bio-name {
   position: absolute;
-  top: 150px;
-  left: 30px;
+  top: 155px;
+  background: rgba(194, 194, 194, 0.70);
+  padding: 2px 55px 0px 57px;
+  color: rgb(0, 6, 51);
+}
+
+#main-bio,
+#contact-info,
+#bio-image {
+  float: left;
 }
 
 #main-bio {
-  width: 70%;
+  width: 65%;
 }
 
 #contact-info {
@@ -66,5 +96,57 @@ a {
 #bio-image {
   width: 200px;
   height: 200px;
-  margin-right: 20px;
+  box-shadow: 5px 5px #333;
+  margin-right: 15px;
 }
+
+#nav-select {
+  visibility: hidden;
+}
+
+/* Class */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+  background: rgb(0, 1, 56);
+}
+
+  .navbar li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: rgb(253, 255, 152);
+    border-radius: 8px;
+  }
+
+  .navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+/* Queries */
+@media (max-width: 700px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }

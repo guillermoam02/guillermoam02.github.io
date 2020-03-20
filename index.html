@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>My Basic HTML Bio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>My HTML Bio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-<body>
-<center><h1>Guillermo A M</h1></center>
-    <img src="pic.jpg" alt="Guillermo A M">
+  <body>
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+   <div/>
 
-    <h2>About myself...</h2>
-    <p>Innovative professional with +5 years of experience in HR looking to consolidate my development as a passionate HR Business Partner in a market leader company. With strong skills working with multicultural teams and ease to enable partnerships between different divisions & hierarchical levels.Experience creating, redesigning, innovating and improving core processes like Talent Acquisition, Organizational development, Organizational culture, Training & development, Compensation & benefits and Payroll & labor relations.</p>
-    <p>Currently studing a bootcamp focused on wrangling, analyzing and visualizing data with different tools such as: VBA, Python, Pandas, Matplotlib, Flask, SQL, MongoDB, Web Scraping, HTML, CSS, Javascript, Plotly.js, D3, Leaflet, Tableau, Machine Learning Basics, Big Data Basics</p>
+    <header>
+      <h1>
+      <select id="nav-select">
+        <option value="home">Home</option>
+        <option value="about">About</option>
+        <option value="portfolio">Portfolio</option>
+        <option value="contact">Contact</option>
+      </select>
+      Welcome to my bio</h1>
+    </header>
 
-    <hr/>
-    <!--CON LA FUNCION DIV COLOCAS Y LUEGO A CADA PARTE LE DAS FORMATO */!-->
+    <main class="container">
+      <section id="main-bio">
+        <h2>Professional background</h2>
+        <section id="figure">
+          <h4 id="bio-name">Guillermo AM</h4>
+          <img id="bio-image" src="pic.jpg" alt="Guillermo AM">
+        </section>
+        <p>Innovative professional with +5 years of experience in HR looking to consolidate my development as a passionate HR Business Partner in a market leader company. With strong skills working with multicultural teams and ease to enable partnerships between different divisions & hierarchical levels.Experience creating, redesigning, innovating and improving core processes like Talent Acquisition, Organizational development, Organizational culture, Training & development, Compensation & benefits and Payroll & labor relations.</p>
+        <p>Currently studing a bootcamp focused on wrangling, analyzing and visualizing data with different tools such as: VBA, Python, Pandas, Matplotlib, Flask, SQL, MongoDB, Web Scraping, HTML, CSS, Javascript, Plotly.js, D3, Leaflet, Tableau, Machine Learning Basics, Big Data Basics</p>
+        
+        <hr/>
+        <a href="https://github.com/guillermoam02?tab=repositories">Look at my git repository</a>
+        <hr/>
 
-    <h2>Contact info.</h2>
-      <ul>
-        <li><strong>Email:</strong><a href="#"> No way! .com </a></li>
-        <li><strong>Github:</strong><a href="#">guillermoam02</a></li>
-      </ul>
-    <hr/>
+        <table>
+          <tr>
+            <th>Books</th>
+            <th>Hobies</th>
+            <th>Interests</th>
+          </tr>
+          <tr>
+            <td>The subtle art of not giving a fuck</td>
+            <td>Soccer</td>
+            <td>Data Analysis</td>
+          </tr>
+          <tr>
+            <td>The 4-hour week</td>
+            <td>Cooking</td>
+            <td>Human Resources</td>
+          </tr>
+          <tr>
+            <td>The Analyst</td>
+            <td>Videogames</td>
+            <td>Sports</td>
+          </tr>
+        </table>
 
-    <br/>
-      <table cellpadding="2" cellspacing="2"
-      width="100%">
-      <tr>
-      <th bgcolor="#cccccc">Books</th>
-      <th bgcolor="#cccccc">Hobies</th>
-      <th bgcolor="#cccccc">Interests</th>
-      </tr>
-      <tr>
-        <td>The subtle art of not giving a fuck</td>
-        <td>Soccer</td>
-        <td>Data Analysis</td>
-      </tr>
-      <tr>
-        <td>The 4-hour week</td>
-        <td>Cooking</td>
-        <td>Human Resources</td>
-      </tr>
-      <tr>
-        <td>The Analyst</td>
-        <td>Videogames</td>
-        <td>Sports</td>
-      </tr>
-    </table>
-    <hr/>
-    <br/>
+        <hr/>
+      </section>
 
-    <a href="https://github.com/guillermoam02?tab=repositories">Look at my git repository</a>
-
-  
+      <aside id="contact-info">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><strong>Email:   </strong><a href="#"> NoWay!.com</a></li>
+          <li><strong>Github:  </strong><a href="#"> guillermoam02</a></li>
+        </ul>
+      </aside>
+    </main>
   </body>
+
+  <!--CON LA FUNCION DIV COLOCAS Y LUEGO A CADA PARTE LE DAS FORMATO */!-->
 
 </html>
